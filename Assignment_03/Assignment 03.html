@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyModule">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+</head>
+<body>
+    <script>
+        var module = angular.module("MyModule",[]);
+        module.controller("MYController", function ($scope) {
+            $scope.click = function () {
+                alert("Hello from ANGULAR JS");
+            }
+        });
+
+    </script>
+
+    <div ng-controller="MYController">
+        <h3> double Click on the below button.</h3>
+        <button ng-dblclick="click()">Click</button>
+    </div>
+
+</body>
+</html>
+
